@@ -24,9 +24,7 @@ C++ menyediakan berbagai jenis operator dan struktur kontrol untuk manipulasi da
 
 ## Unguided 
 
-### 1. Buatlah program yang menerima input-an dua buah bilangan betipe float, kemudian 
-memberikan output-an hasil penjumlahan, pengurangan, perkalian, dan pembagian dari dua 
-bilangan tersebut. 
+### 1. Buatlah program yang menerima input-an dua buah bilangan betipe float, kemudian memberikan output-an hasil penjumlahan, pengurangan, perkalian, dan pembagian dari dua bilangan tersebut.  
 
 ```C++
 #include <iostream>
@@ -52,19 +50,16 @@ int main() {
 ### Output Unguided 1 :
 
 ##### Output 1
-![Screenshot Output Unguided 1_1](https://github.com/(username github kalian)/(nama repository github kalian)/blob/main/(path folder menyimpan screenshot output)/(nama file screenshot output).png)
+![Screenshot Output Unguided 1_1](https://github.com/lalunaad/PRAKTIKUMSTRUKTURDATA_LALUNA-AFRIL-DIASYIFA_109082500009/blob/main/Modul-1/output/output-soal1.png?raw=true)
 
-contoh :
-![Screenshot Output Unguided 1_1](https://github.com/DhimazHafizh/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan1_Modul1/Output-Unguided1-1.png)
 
 ##### Output 2
-![Screenshot Output Unguided 1_2](https://github.com/(username github kalian)/(nama repository github kalian)/blob/main/(path folder menyimpan screenshot output)/(nama file screenshot output).png)
+![Screenshot Output Unguided 1_2](https://github.com/lalunaad/PRAKTIKUMSTRUKTURDATA_LALUNA-AFRIL-DIASYIFA_109082500009/blob/main/Modul-1/output/output2-soal1.png?raw=true)
 
-penjelasan unguided 1 
+Program ini berfungsi untuk menghitung operasi aritmatika dari dua bilangan desimal. Setelah variabel a dan b dibuat dan diisi input dari user, program langsung menampilkan hasil penjumlahan, pengurangan, dan perkalian. Khusus untuk pembagian, ditambahkan pengecekan pakai if-else untuk memastikan nilai b tidak nol, tujuannya supaya program tidak error saat dijalankan.
 
-### 2. Buatlah sebuah program yang menerima masukan angka dan mengeluarkan output nilai 
-angka tersebut dalam bentuk tulisan. Angka yang akan di- input-kan user adalah bilangan bulat 
-positif mulai dari 0 s.d 100
+### 2. Buatlah sebuah program yang menerima masukan angka dan mengeluarkan output nilai angka tersebut dalam bentuk tulisan. Angka yang akan di- input-kan user adalah bilangan bulat positif mulai dari 0 s.d 100 
+
 
 ```C++
 #include <iostream>
@@ -107,13 +102,10 @@ int main() {
 ### Output Unguided 2 :
 
 ##### Output 1
-![Screenshot Output Unguided 2_1](https://github.com/(username github kalian)/(nama repository github kalian)/blob/main/(path folder menyimpan screenshot output)/(nama file screenshot output).png)
-
-contoh :
-![Screenshot Output Unguided 2_1](https://github.com/DhimazHafizh/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan1_Modul1/Output-Unguided2-1.png)
+![Screenshot Output Unguided 2_1](https://github.com/lalunaad/PRAKTIKUMSTRUKTURDATA_LALUNA-AFRIL-DIASYIFA_109082500009/blob/main/Modul-1/output/output-soal2.png?raw=true)
 
 ##### Output 2
-![Screenshot Output Unguided 2_2](https://github.com/(username github kalian)/(nama repository github kalian)/blob/main/(path folder menyimpan screenshot output)/(nama file screenshot output).png)
+![Screenshot Output Unguided 2_2](https://github.com/lalunaad/PRAKTIKUMSTRUKTURDATA_LALUNA-AFRIL-DIASYIFA_109082500009/blob/main/Modul-1/output/output2-soal2.png?raw=true)
 
 ​Program ini mengubah angka 0–100 menjadi teks terbilang. Setelah memvalidasi batas input, program menangani angka khusus (0, 10, 100) secara langsung dan mengambil kata satuan (1–9) dari array. Untuk angka 11–19, program menambahkan kata "belas", sedangkan angka 20–99 dipecah menjadi nilai puluhan dan satuan menggunakan operator / dan % lalu digabungkan.
 
@@ -161,13 +153,12 @@ int main() {
 ### Output Unguided 3 :
 
 ##### Output 1
-![Screenshot Output Unguided 3_1](https://github.com/(username github kalian)/(nama repository github kalian)/blob/main/(path folder menyimpan screenshot output)/(nama file screenshot output).png)
+![Screenshot Output Unguided 3_1](https://github.com/lalunaad/PRAKTIKUMSTRUKTURDATA_LALUNA-AFRIL-DIASYIFA_109082500009/blob/main/Modul-1/output/output-soal3.png?raw=true)
 
-contoh :
-![Screenshot Output Unguided 3_1](https://github.com/DhimazHafizh/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan1_Modul1/Output-Unguided3-1.png)
 
 ##### Output 2
-![Screenshot Output Unguided 3_2](https://github.com/(username github kalian)/(nama repository github kalian)/blob/main/(path folder menyimpan screenshot output)/(nama file screenshot output).png)
+![Screenshot Output Unguided 3_2](
+https://github.com/lalunaad/PRAKTIKUMSTRUKTURDATA_LALUNA-AFRIL-DIASYIFA_109082500009/blob/main/Modul-1/output/output2-soal3.png?raw=true)
 
 ​Program ini mencetak pola angka cermin berbasis input n dengan karakter bintang (*) di tengahnya. Melalui perulangan for bersarang, program mengatur spasi awal, lalu mencetak angka menurun dari (n - i) ke 1, tanda *, dan angka menaik kembali ke (n - i). Jumlah angka berkurang di setiap baris hingga baris terakhir hanya menyisakan tanda bintang.
 
