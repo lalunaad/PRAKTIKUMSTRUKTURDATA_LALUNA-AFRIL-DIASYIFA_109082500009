@@ -430,18 +430,67 @@ int main(){
 ### Output Unguided 1 :
 
 ##### Output 1
-![Screenshot Output Unguided 1_1](https://github.com/(username github kalian)/(nama repository github kalian)/blob/main/(path folder menyimpan screenshot output)/(nama file screenshot output).png)
+![Screenshot Output Unguided 1_1](https://github.com/lalunaad/PRAKTIKUMSTRUKTURDATA_LALUNA-AFRIL-DIASYIFA_109082500009/blob/main/Modul-2/output/output-unguided1.jpeg?raw=true)
 
 
 ##### Output 2
-![Screenshot Output Unguided 1_2](https://github.com/(username github kalian)/(nama repository github kalian)/blob/main/(path folder menyimpan screenshot output)/(nama file screenshot output).png)
+![Screenshot Output Unguided 1_2](https://github.com/lalunaad/PRAKTIKUMSTRUKTURDATA_LALUNA-AFRIL-DIASYIFA_109082500009/blob/main/Modul-2/output/output-unguided1(2).jpeg?raw=true)
 
-penjelasan unguided 1 
+Program tersebut digunakan untuk melakukan operasi penjumlahan, pengurangan, dan perkalian pada dua matriks berukuran 3x3 yang diinputkan oleh pengguna. Program menggunakan perulangan bersarang untuk menerima input, menampilkan isi matriks, serta menghitung hasil penjumlahan dan pengurangan secara elemen per elemen. Selain itu, program menghitung perkalian matriks dengan mengalikan elemen baris dan kolom menggunakan loop tambahan, sehingga menampilkan hasil lengkap dari ketiga operasi matematika tersebut ke layar.
 
-### 2. (isi dengan soal unguided 2)
-
+### 2. Berdasarkan guided pointer dan reference sebelumnya, buatlah keduanya dapat menukar nilai dari 3 variabel  
 ```C++
-source code unguided 2
+#include <iostream>
+using namespace std;
+
+void tukarPointer(int *x, int *y, int *z) {
+    int temp;
+
+    temp = *x;
+    *x = *y;
+    *y = *z;
+    *z = temp;
+}
+
+void tukarReference(int &x, int &y, int &z) {
+    int temp;
+
+    temp = x;
+    x = y;
+    y = z;
+    z = temp;
+}
+
+int main() {
+    int a = 4;
+    int b = 6;
+    int c = 8;
+
+    cout << "Sebelum ditukar: " << endl;
+    cout << "a = " << a << endl;
+    cout << "b = " << b << endl;
+    cout << "c = " << c << endl;
+
+    tukarPointer(&a, &b, &c);
+
+    cout << "\nSetelah ditukar Pointer: " << endl;
+    cout << "a = " << a << endl;
+    cout << "b = " << b << endl;
+    cout << "c = " << c << endl;
+
+    a = 4;
+    b = 6;
+    c = 8;
+
+    tukarReference(a, b, c);
+
+    cout << "\nSetelah ditukar Reference: " << endl;
+    cout << "a = " << a << endl;
+    cout << "b = " << b << endl;
+    cout << "c = " << c << endl;
+
+    return 0;
+}
 ```
 ### Output Unguided 2 :
 
