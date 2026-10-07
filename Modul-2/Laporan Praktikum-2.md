@@ -247,7 +247,7 @@ int main(){
 ```
 Program tersebut digunakan untuk mengakses nilai dan alamat memori pada array karakter. Array `arr` diisi dengan enam karakter, kemudian program menampilkan nilai pada indeks ke-3 dan alamat memori elemen indeks ke-4 menggunakan operator `&`, sehingga menunjukkan cara mengambil data spesifik serta lokasi penyimpanannya dalam memori.
 
-### 8. Call By Pointer, Reference, Value
+### 9. Call By Pointer, Reference, Value
 
 ```C++
 #include <iostream>
@@ -495,33 +495,100 @@ int main() {
 ### Output Unguided 2 :
 
 ##### Output 1
-![Screenshot Output Unguided 2_1](https://github.com/(username github kalian)/(nama repository github kalian)/blob/main/(path folder menyimpan screenshot output)/(nama file screenshot output).png)
+![Screenshot Output Unguided 2_1](https://github.com/lalunaad/PRAKTIKUMSTRUKTURDATA_LALUNA-AFRIL-DIASYIFA_109082500009/blob/main/Modul-2/output/output-unguided2.jpeg?raw=true)
 
+Program tersebut digunakan untuk mendemonstrasikan perbandingan penukaran nilai tiga variabel menggunakan metode *pass by pointer* dan *pass by reference*. Fungsi `tukarPointer` memanipulasi nilai melalui alamat memori menggunakan operator dereference (`*`), sedangkan `tukarReference` mengakses variabel secara langsung menggunakan operator reference (`&`). Selain itu, program melakukan pergeseran nilai melingkar dan menampilkan hasil sebelum serta sesudah pertukaran, sehingga membuktikan bahwa kedua metode berhasil mengubah nilai variabel asli di fungsi `main`.
 
-##### Output 2
-![Screenshot Output Unguided 2_2](https://github.com/(username github kalian)/(nama repository github kalian)/blob/main/(path folder menyimpan screenshot output)/(nama file screenshot output).png)
-
-penjelasan unguided 2
-
-### 3. (isi dengan soal unguided 3)
+### 3. Diketahui sebuah array 1 dimensi sebagai berikut :  arrA = {11, 8, 5, 7, 12, 26, 3, 54, 33, 55} Buatlah program yang dapat mencari nilai minimum, maksimum, dan rata – rata dari array tersebut! Gunakan function cariMinimum() untuk mencari nilai minimum dan function cariMaksimum() untuk mencari nilai maksimum, serta gunakan prosedur hitungRataRata() untuk menghitung nilai rata – rata! Buat program menggunakan menu switch-case seperti berikut ini : --- Menu Program Array ---  • Tampilkan isi array  • cari nilai maksimum • cari nilai minimum  • Hitung nilai rata - rata 
 
 ```C++
-source code unguided 3
+#include <iostream>
+using namespace std;
+
+int cariMinimum(int arr[], int n) {
+    int min = arr[0];
+    for (int i = 1; i < n; i++) {
+        if (arr[i] < min) min = arr[i];
+    }
+    return min;
+}
+
+int cariMaksimum(int arr[], int n) {
+    int max = arr[0];
+    for (int i = 1; i < n; i++) {
+        if (arr[i] > max) max = arr[i];
+    }
+    return max;
+}
+
+void hitungRataRata(int arr[], int n) {
+    int sum = 0;
+    for (int i = 0; i < n; i++) {
+        sum += arr[i];
+    }
+    cout << "Nilai rata-rata: " << (float)sum / n << endl;
+}
+
+void tampilkanArray(int arr[], int n) {
+    for (int i = 0; i < n; i++) {
+        cout << arr[i] << " ";
+    }
+    cout << endl;
+}
+
+int main() {
+    int arrA[] = {11, 8, 5, 7, 12, 26, 3, 54, 33, 55};
+    int n = sizeof(arrA) / sizeof(arrA[0]);
+    int pilihan;
+
+    do {
+        cout << "\n--- Menu Program Array ---\n";
+        cout << "1. Tampilkan isi array\n";
+        cout << "2. Cari nilai maksimum\n";
+        cout << "3. Cari nilai minimum\n";
+        cout << "4. Hitung nilai rata-rata\n";
+        cout << "5. Keluar\n";
+        cout << "Pilih menu (1-5): ";
+        cin >> pilihan;
+
+        switch (pilihan) {
+            case 1:
+                cout << "Isi array: ";
+                tampilkanArray(arrA, n);
+                break;
+            case 2:
+                cout << "Nilai maksimum: " << cariMaksimum(arrA, n) << endl;
+                break;
+            case 3:
+                cout << "Nilai minimum: " << cariMinimum(arrA, n) << endl;
+                break;
+            case 4:
+                hitungRataRata(arrA, n);
+                break;
+            case 5:
+                cout << "Program selesai." << endl;
+                break;
+            default:
+                cout << "Pilihan tidak valid." << endl;
+        }
+    } while (pilihan != 5);
+
+    return 0;
+}
 ```
 ### Output Unguided 3 :
 
 ##### Output 1
-![Screenshot Output Unguided 3_1](https://github.com/(username github kalian)/(nama repository github kalian)/blob/main/(path folder menyimpan screenshot output)/(nama file screenshot output).png)
+![Screenshot Output Unguided 3_1](https://github.com/lalunaad/PRAKTIKUMSTRUKTURDATA_LALUNA-AFRIL-DIASYIFA_109082500009/blob/main/Modul-2/output/output-unguided3.jpeg?raw=true)
 
-##### Output 2
-![Screenshot Output Unguided 3_2](https://github.com/(username github kalian)/(nama repository github kalian)/blob/main/(path folder menyimpan screenshot output)/(nama file screenshot output).png)
-
-penjelasan unguided 3
+Program tersebut digunakan untuk mengelola dan mengolah data pada array satu dimensi menggunakan menu interaktif berbasis switch-case. Program memanfaatkan fungsi `cariMinimum`, `cariMaksimum`, dan `hitungRataRata` untuk memproses elemen array, serta fungsi `tampilkanArray` untuk menampilkan isinya. Selain itu, fungsi `main` menyediakan pilihan menu yang memungkinkan pengguna untuk menampilkan data, mencari nilai ekstrem, menghitung rata-rata, atau keluar dari program, sehingga memudahkan interaksi dan analisis data array secara terstruktur.
 
 ## Kesimpulan
-...
+Berdasarkan praktikum Modul 2, dapat disimpulkan bahwa penguasaan konsep array, pointer, fungsi, prosedur, dan pelewatan parameter merupakan fondasi penting dalam pemrograman C++ yang terstruktur dan efisien. Array memungkinkan pengelolaan data berkelompok secara sistematis dalam satu hingga tiga dimensi, sementara pointer memberikan akses langsung ke alamat memori untuk manipulasi data yang lebih fleksibel. Pembagian kode ke dalam fungsi (mengembalikan nilai) dan prosedur (void) meningkatkan modularitas serta memudahkan pemeliharaan program. Selain itu, pemahaman perbedaan antara *call by value*, *call by pointer*, dan *call by reference* sangat krusial, di mana metode pointer dan reference memungkinkan perubahan langsung pada variabel asli di memori, berbeda dengan *call by value* yang hanya bekerja pada salinan data.
 
 ## Referensi
-[1] Triase. (2020). Diktat Edisi Revisi : STRUKTUR DATA. Medan: UNIVERSTAS ISLAM NEGERI SUMATERA UTARA MEDAN. 
-<br>[2] Indahyati, Uce., Rahmawati Yunianita. (2020). "BUKU AJAR ALGORITMA DAN PEMROGRAMAN DALAM BAHASA C++". Sidoarjo: Umsida Press. Diakses pada 10 Maret 2024 melalui https://doi.org/10.21070/2020/978-623-6833-67-4.
+[1] Tim Asisten Praktikum. (t.t.). Modul 2: Pengenalan Bahasa C++ (Bagian Kedua). Telkom University.
+<br>[2] Indahyanti, Uce., & Rahmawati Yunianita. (2020). Buku Ajar Algoritma Dan Pemrograman Dalam Bahasa C++. Sidoarjo: Umsida Press.
+Diakses melalui
+https://doi.org/10.21070/2020/978-623-6833-67-4.
 <br>...
