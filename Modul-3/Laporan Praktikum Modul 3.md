@@ -196,11 +196,10 @@ int main(){
 ### Output Unguided 1 :
 
 ##### Output 1
-![Screenshot Output Unguided 1_1](https://github.com/(username github kalian)/(nama repository github kalian)/blob/main/(path folder menyimpan screenshot output)/(nama file screenshot output).png)
+![Screenshot Output Unguided 1_1](https://github.com/lalunaad/PRAKTIKUMSTRUKTURDATA_LALUNA-AFRIL-DIASYIFA_109082500009/blob/main/Modul-3/Output-Modul3/output-unguided1.png?raw=true)
 
 ##### Output 2
-![Screenshot Output Unguided 1_2](https://github.com/(username github kalian)/(nama repository github kalian)/blob/main/(path folder menyimpan screenshot output)/(nama file screenshot output).png)
-
+![Screenshot Output Unguided 1_2](https://github.com/lalunaad/PRAKTIKUMSTRUKTURDATA_LALUNA-AFRIL-DIASYIFA_109082500009/blob/main/Modul-3/Output-Modul3/output-unguided1(2).png?raw=true)
 Program ini menerapkan konsep ADT (Abstract Data Type) terpisah yang terbagi menjadi tiga file (`mahasiswa.h`, `mahasiswa.cpp`, dan `main.cpp`) untuk mengolah data mahasiswa secara terstruktur. File `mahasiswa.h` berfungsi menyimpan definisi `struct mahasiswa` dan deklarasi fungsi yang dilindungi oleh *include guard*. Realisasi fungsinya terdapat pada `mahasiswa.cpp`, yang memuat prosedur `inputMhs` dengan parameter referensi (`&m`) untuk pengisian data serta fungsi `nilaiAkhir` untuk menghitung nilai akhir sesuai bobot persentase. Selanjutnya, `main.cpp` bertindak sebagai program utama yang menyimpan data ke dalam *array of struct* berkapasitas maksimal 10 elemen, melakukan validasi jumlah input, dan menampilkan seluruh informasi mahasiswa beserta nilai akhirnya ke layar.
 
 ### 2. Buatlah ADT pelajaran sebagai berikut di dalam file “pelajaran.h”:
@@ -261,7 +260,7 @@ int main() {
 ### Output Unguided 2 :
 
 ##### Output 1
-![Screenshot Output Unguided 2_1](https://github.com/(username github kalian)/(nama repository github kalian)/blob/main/(path folder menyimpan screenshot output)/(nama file screenshot output).png)
+![Screenshot Output Unguided 1_1](https://github.com/lalunaad/PRAKTIKUMSTRUKTURDATA_LALUNA-AFRIL-DIASYIFA_109082500009/blob/main/Modul-3/Output-Modul3/output-unguided2.png?raw=true)
 
 Program ini menerapkan Abstract Data Type (ADT) terpisah yang terbagi menjadi file `pelajaran.h`, `pelajaran.cpp`, dan `main.cpp` untuk mengelola data mata pelajaran secara modular. File `pelajaran.h` berfungsi menyimpan definisi `struct pelajaran` beserta deklarasi fungsi yang dilindungi oleh *header guard*. Implementasi kodenya berada pada `pelajaran.cpp`, yang memuat fungsi `create_pelajaran` untuk menginisialisasi atribut `namaMapel` dan `kodeMapel`, serta prosedur `tampil_pelajaran` untuk mencetak nilainya. Selanjutnya, file `main.cpp` bertindak sebagai program utama yang menyiapkan data string awal, memanggil fungsi pembentuk objek, dan menampilkan hasilnya ke layar.
 
@@ -312,6 +311,7 @@ void tukarPointer(int *p1, int *p2) {
 }
 ```
 ### 3. main.cpp
+```C++
 #include <iostream>
 #include "array.h"
 using namespace std;
@@ -352,17 +352,16 @@ int main()
 ### Output Unguided 3 :
 
 ##### Output 1
-![Screenshot Output Unguided 3_1](https://github.com/(username github kalian)/(nama repository github kalian)/blob/main/(path folder menyimpan screenshot output)/(nama file screenshot output).png)
+![Screenshot Output Unguided 1_1](https://github.com/lalunaad/PRAKTIKUMSTRUKTURDATA_LALUNA-AFRIL-DIASYIFA_109082500009/blob/main/Modul-3/Output-Modul3/output-unguided3.png?raw=true)
 
 ##### Output 2
-![Screenshot Output Unguided 3_2](https://github.com/(username github kalian)/(nama repository github kalian)/blob/main/(path folder menyimpan screenshot output)/(nama file screenshot output).png)
+![Screenshot Output Unguided 1_2](https://github.com/lalunaad/PRAKTIKUMSTRUKTURDATA_LALUNA-AFRIL-DIASYIFA_109082500009/blob/main/Modul-3/Output-Modul3/output-unguided3(2).png?raw=true)
+
 
 Program ini menerapkan struktur modular berbasis ADT terpisah (array.h, array.cpp, dan main.cpp) untuk mengolah matriks $3 \times 3$ serta pointer. File array.h memuat deklarasi fungsi dengan perlindungan header guard, sementara array.cpp berisi implementasinya, yaitu prosedur tampilArray untuk mencetak elemen matriks, tukarArray untuk menukar nilai pada posisi matriks yang dipilih, dan tukarPointer untuk menukar nilai dua variabel langsung lewat alamat memorinya. File main.cpp sendiri berperan sebagai driver utama yang menyiapkan matriks dan pointer, menerima input indeks baris serta kolom dari pengguna, lalu menjalankan seluruh proses penukaran data tersebut.
 
 ## Kesimpulan
-...
+Praktikum ini menerapkan konsep Abstract Data Type (ADT) dan pemrograman modular berbasis struktur multi-file (.h, .cpp, dan main.cpp) untuk membangun program C++ yang terorganisasi dan mudah dipelihara. Pada nomor 1, penggunaan array of struct dan parameter referensi (&) berhasil diterapkan untuk memproses pengisian data serta perhitungan nilai akhir mahasiswa. Nomor 2 menunjukkan pengkapsulan data mata pelajaran melalui tipe data terstruktur dan fungsi pembentuk objek (create_pelajaran). Terakhir, nomor 3 membuktikan penerapan operasi manipulasi array dua dimensi ($3 \times 3$) serta penggunaan pointer untuk melakukan pertukaran nilai langsung pada alamat memori. Secara keseluruhan, pemisahan antarmuka dan implementasi program memudahkan proses pemeliharaan kode serta mencegah error redefinisi melalui penggunaan header guard.
 
 ## Referensi
-[1] Triase. (2020). Diktat Edisi Revisi : STRUKTUR DATA. Medan: UNIVERSTAS ISLAM NEGERI SUMATERA UTARA MEDAN. 
-<br>[2] Indahyati, Uce., Rahmawati Yunianita. (2020). "BUKU AJAR ALGORITMA DAN PEMROGRAMAN DALAM BAHASA C++". Sidoarjo: Umsida Press. Diakses pada 10 Maret 2024 melalui https://doi.org/10.21070/2020/978-623-6833-67-4.
-<br>...
+[1] Modul Praktikum Struktur Data, Modul 3 Abstract Data Type (ADT). Fakultas Informatika, Telkom University.
