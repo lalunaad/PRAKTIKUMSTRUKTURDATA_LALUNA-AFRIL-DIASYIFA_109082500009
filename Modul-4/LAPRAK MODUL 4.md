@@ -523,7 +523,7 @@ int main() {
 ### Output Unguided 1 :
 
 ##### Output 1
-![Screenshot Output Unguided 1_1](https://github.com/(username github kalian)/(nama repository github kalian)/blob/main/(path folder menyimpan screenshot output)/(nama file screenshot output).png)
+![Screenshot Output Unguided 1_1](https://github.com/lalunaad/PRAKTIKUMSTRUKTURDATA_LALUNA-AFRIL-DIASYIFA_109082500009/blob/main/Modul-4/output/output-1.png?raw=true)
 
 Berdasarkan soal Unguided 1, kita diminta untuk membangun struktur data Singly Linked List menggunakan Abstract Data Type (ADT) yang terbagi menjadi tiga file utama: membuat file header Singlylist.h untuk mendeklarasikan tipe data dan prototipe fungsi, membuat file implementasi Singlylist.cpp untuk menuliskan logika prosedur manajemen memori serta operasi dasar seperti penyisipan dan penghapusan node, serta membuat file program utama main.cpp guna menguji jalannya fungsi-fungsi tersebut dengan memasukkan serangkaian data angka menggunakan insertFirst, menghapus beberapa node, menghitung jumlah node yang tersisa dengan nbList, dan membersihkan seluruh memori list di akhir program. 
 
@@ -697,7 +697,7 @@ int main() {
 ### Output Unguided 2 :
 
 ##### Output 1
-![Screenshot Output Unguided 2_1](https://github.com/(username github kalian)/(nama repository github kalian)/blob/main/(path folder menyimpan screenshot output)/(nama file screenshot output).png)
+![Screenshot Output Unguided 2_1](https://github.com/lalunaad/PRAKTIKUMSTRUKTURDATA_LALUNA-AFRIL-DIASYIFA_109082500009/blob/main/Modul-4/output/output-2.png?raw=true)
 
 Program pada Unguided 2 melanjutkan implementasi Singly Linked List dengan fokus melakukan uji coba berbagai fungsi penghapusan node. Berdasarkan program utama (main.cpp), list awalnya diisi dengan nilai 2, 0, 8, 12, dan 9 menggunakan metode insertFirst sehingga menghasilkan urutan awal 9 12 8 0 2. Selanjutnya, program menghapus node pertama (9) menggunakan deleteFirst(), menghapus node terakhir (2) menggunakan deleteLast(), serta menghapus node setelah P4 (yakni nilai 8) menggunakan deleteAfter(). Setelah proses penghapusan tersebut, sisa elemen list ditampilkan menggunakan printInfo(L), jumlah node yang tersisa dihitung menggunakan nbList(L), dan seluruh memori list akhirnya dibersihkan menggunakan deleteList(L) untuk mencegah terjadinya memory leak.
 
