@@ -485,7 +485,7 @@ int main() {
 ### Output Unguided 1 :
 
 ##### Output 1
-![Screenshot Output Unguided 1_1](https://github.com/(username github kalian)/(nama repository github kalian)/blob/main/(path folder menyimpan screenshot output)/(nama file screenshot output).png)
+![Screenshot Output Unguided 1_1](https://github.com/lalunaad/PRAKTIKUMSTRUKTURDATA_LALUNA-AFRIL-DIASYIFA_109082500009/blob/main/Modul-6/Output/output%201%20-%20modul%206.png?raw=true)
 
 Program di atas merupakan implementasi studi kasus Doubly Linked List untuk mengelola data kendaraan berupa nomor polisi, warna, dan tahun buat. Program ini dilengkapi dengan fitur validasi agar nomor polisi yang sama tidak dapat diinputkan dua kali serta menggunakan metode penelusuran mundur dari pointer Last untuk mencetak data sesuai dengan ekspektasi output.
 
@@ -604,7 +604,7 @@ int main() {
 ### Output Unguided 2 :
 
 ##### Output 1
-![Screenshot Output Unguided 2_1](https://github.com/(username github kalian)/(nama repository github kalian)/blob/main/(path folder menyimpan screenshot output)/(nama file screenshot output).png)
+![Screenshot Output Unguided 2_1](https://github.com/lalunaad/PRAKTIKUMSTRUKTURDATA_LALUNA-AFRIL-DIASYIFA_109082500009/blob/main/Modul-6/Output/output%202%20-%20modul%206.png?raw=true)
 
 Program di atas merupakan implementasi fungsi searching (findElm) pada Doubly Linked List untuk mencari data kendaraan berdasarkan nomor polisi yang diinputkan oleh pengguna. Jika data ditemukan, program akan menampilkan detail informasi kendaraan tersebut (nomor polisi, warna, dan tahun) sesuai dengan ekspektasi output.
 
@@ -782,7 +782,7 @@ int main() {
 ### Output Unguided 3 :
 
 ##### Output 1
-![Screenshot Output Unguided 3_1](https://github.com/(username github kalian)/(nama repository github kalian)/blob/main/(path folder menyimpan screenshot output)/(nama file screenshot output).png)
+![Screenshot Output Unguided 3_1](https://github.com/lalunaad/PRAKTIKUMSTRUKTURDATA_LALUNA-AFRIL-DIASYIFA_109082500009/blob/main/Modul-6/Output/output%203%20-%20modul%206.png?raw=true)
 
 Program di atas merupakan implementasi operasi penghapusan data (deletion) pada Doubly Linked List berdasarkan nomor polisi kendaraan yang diinputkan pengguna. Program memanfaatkan prosedur deleteFirst, deleteLast, dan deleteAfter untuk menangani posisi data yang akan dihapus (baik di awal, di akhir, maupun di tengah list), lalu mendealokasi memori serta menampilkan sisa data secara mundur (backward traversal) sesuai ekspektasi output.
 
