@@ -1,4 +1,4 @@
-# <h1 align="center">Laporan Praktikum Modul 7 - Codeblocks IDE & Pengenalan Bahas C++ (Bagian Pertama)</h1>
+# <h1 align="center">Laporan Praktikum Modul 7 - Stack</h1>
 <p align="center">Laluna Afril Diasyifa - 109082500009</p>
 
 ## Dasar Teori
@@ -160,7 +160,7 @@ int main() {
     return 0;
 }
 ```
-penjelasan singkat guided 3
+Program *guided* di atas merupakan bentuk implementasi struktur data *stack* menggunakan *array* dalam bahasa C++ yang dirancang untuk mengelola data mahasiswa berupa NIM dan nama. Melalui struktur modular yang terbagi menjadi *file* *header* (`stack.h`), *file* implementasi (`stack.cpp`), dan *file* utama (`main.cpp`), program ini mendemonstrasikan cara kerja operasi *stack* berdasarkan prinsip *Last In, First Out* (LIFO)—mulai dari inisialisasi tumpukan kosong, penambahan data menggunakan fungsi *push*, pengambilan data teratas melalui fungsi *pop*, hingga pemantauan isi tumpukan secara *real-time* menggunakan prosedur `viewStack`.
 
 ## Unguided 
 
@@ -301,9 +301,9 @@ int main()
 ### Output Unguided 1 :
 
 ##### Output 1
-![Screenshot Output Unguided 1_1](https://github.com/(username github kalian)/(nama repository github kalian)/blob/main/(path folder menyimpan screenshot output)/(nama file screenshot output).png)
+![Screenshot Output Unguided 1_1](https://github.com/lalunaad/PRAKTIKUMSTRUKTURDATA_LALUNA-AFRIL-DIASYIFA_109082500009/blob/main/Modul-7/Output/output%201%20-%20modul%207.png?raw=true)
 
-penjelasan unguided 1 
+Program di atas menerapkan struktur data stack pakai array dengan kapasitas 20 elemen. Fungsi push bertugas nyimpen nilai ke indeks top terus naikin posisinya, sedangkan pop ngambil elemen teratas dengan nurunin indeks top terlebih dahulu. Selain itu, ada prosedur printInfo buat nampilin isi stack dari atas ke bawah, serta balikStack buat membalik urutan elemen di dalam array secara langsung.
 
 ### 2. Tambahkan prosedur pushAscending( in/out S : Stack, in x : integer)
 ```
@@ -444,9 +444,9 @@ int main() {
 ### Output Unguided 2 :
 
 ##### Output 1
-![Screenshot Output Unguided 2_1](https://github.com/(username github kalian)/(nama repository github kalian)/blob/main/(path folder menyimpan screenshot output)/(nama file screenshot output).png)
+![Screenshot Output Unguided 2_1](https://github.com/lalunaad/PRAKTIKUMSTRUKTURDATA_LALUNA-AFRIL-DIASYIFA_109082500009/blob/main/Modul-7/Output/output%202%20-%20modul%207.png?raw=true)
 
-penjelasan unguided 2
+Program di atas menambahkan prosedur pushAscending buat menyisipkan data secara terurut menaik (kecil ke besar) langsung ke dalam stack. Ketika fungsi ini dipanggil, data baru bakal dibandingkan dan digeser posisinya supaya nilainya tetap tersusun ascending dari bawah ke atas, yang kemudian bisa dibalik urutannya pakai balikStack.
 
 ### 3. Tambahkan prosedur getInputStream( in/out S : Stack ). Prosedur akan terus membaca dan menerima input user dan memasukkan setiap input ke dalam stack hingga user menekan tombol enter. Contoh: gunakan cin.get() untuk mendapatkan inputan user.
 ```
@@ -564,14 +564,12 @@ int main() {
 ### Output Unguided 3 :
 
 ##### Output 1
-![Screenshot Output Unguided 3_1](https://github.com/(username github kalian)/(nama repository github kalian)/blob/main/(path folder menyimpan screenshot output)/(nama file screenshot output).png)
+![Screenshot Output Unguided 3_1](https://github.com/lalunaad/PRAKTIKUMSTRUKTURDATA_LALUNA-AFRIL-DIASYIFA_109082500009/blob/main/Modul-7/Output/output%203%20-%20modul%207.png?raw=true)
 
-penjelasan unguided 3
+Program di atas menambahkan prosedur getInputStream yang berfungsi untuk membaca input karakter dari pengguna secara terus-menerus menggunakan cin.get() hingga tombol enter ditekan. Karakter angka yang diinputkan kemudian dikonversi menjadi bilangan bulat dan dimasukkan ke dalam stack melalui operasi push, sebelum akhirnya ditampilkan dan dibalik urutannya menggunakan balikStack.
 
 ## Kesimpulan
-...
+Berdasarkan praktikum Modul 7, dapat disimpulkan bahwa *stack* adalah struktur data linier yang menerapkan prinsip *Last In, First Out* (LIFO), di mana proses penyimpanan (*push*) maupun penarikan (*pop*) elemen hanya berpusat pada satu titik ujung saja, yaitu *top*. Penggunaan representasi *array* pada *stack* dinilai sangat efisien untuk menangani data berkapasitas tetap karena pengaturannya dilakukan langsung melalui pergerakan indeks tanpa perlu alokasi memori secara dinamis. Di samping itu, penerapan berbagai fungsi tambahan seperti *pushAscending*, *balikStack*, serta *getInputStream* membuktikan tingginya tingkat fleksibilitas *stack* dalam mengakomodasi berbagai skenario kasus, mulai dari penyusunan data terurut, pembalikan posisi elemen pada larik, hingga pengolahan karakter masukan langsung dari pengguna. Secara keseluruhan, kegiatan praktikum ini berhasil memperdalam pemahaman konsep fundamental mengenai pengelolaan tumpukan data secara terstruktur dan terbalik.
 
 ## Referensi
-[1] Triase. (2020). Diktat Edisi Revisi : STRUKTUR DATA. Medan: UNIVERSTAS ISLAM NEGERI SUMATERA UTARA MEDAN. 
-<br>[2] Indahyati, Uce., Rahmawati Yunianita. (2020). "BUKU AJAR ALGORITMA DAN PEMROGRAMAN DALAM BAHASA C++". Sidoarjo: Umsida Press. Diakses pada 10 Maret 2024 melalui https://doi.org/10.21070/2020/978-623-6833-67-4.
-<br>...
+[1] Informatics Laboratory, Fakultas Informatika, Telkom University. (t.t.). Modul 7: Stack. Modul Praktikum Struktur Data.
